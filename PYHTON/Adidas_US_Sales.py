@@ -15,7 +15,7 @@ st.markdown("This dashboard shows sales insights.")
 # Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_excel("C:/Users/Nitesh/OneDrive/Desktop/TOPS TECHNOLOGY/Power BI/DATASET/Adidas US Sales dashboard.xlsx")
+    df = pd.read_excel("Adidas US Sales dashboard.xlsx")
     df["Invoice Date"] = pd.to_datetime(df["Invoice Date"])
     return df
 
@@ -272,3 +272,4 @@ st.write("""
 • Online sales show higher margins than in-store.\n
 • A few states account for the majority of sales (Pareto effect).
 """)
+
